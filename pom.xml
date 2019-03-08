@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.cyber</groupId>
+    <artifactId>attackjavac</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>processor</module>
+        <module>samples</module>
+        <module>doclet</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <encoding>UTF-8</encoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>attack-public</id>
+            <name>attack-public</name>
+            <url>http://ip:8882/</url>
+            <releases>
+                <checksumPolicy>ignore</checksumPolicy>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <checksumPolicy>ignore</checksumPolicy>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>central</name>
+            <url>http://ip:8882/</url>
+            <layout>default</layout>
+            <releases>
+                <checksumPolicy>ignore</checksumPolicy>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <checksumPolicy>ignore</checksumPolicy>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <!--<doclet>org.cyber.Attack</doclet>-->
+                    <!--&lt;!&ndash;<docletPath>${basedir}/doclet/target/doclet.1.0-SNAPSHOT.jar</docletPath>&ndash;&gt;-->
+                    <!--<docletArtifact>-->
+                        <!--<groupId>org.cyber</groupId>-->
+                        <!--<artifactId>doclet</artifactId>-->
+                        <!--<version>1.0-SNAPSHOT</version>-->
+                    <!--</docletArtifact>-->
+                    <useStandardDocletOptions>false</useStandardDocletOptions>
+                    <!--<additionalparam>-Xdoclint:none &#45;&#45;allow-script-in-comments</additionalparam>-->
+                </configuration>
+                <version>3.11.2-SNAPSHOT</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
