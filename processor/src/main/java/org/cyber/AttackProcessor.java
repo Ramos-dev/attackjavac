@@ -35,11 +35,11 @@ public class AttackProcessor extends AbstractProcessor {
             //p.waitFor();
         } catch (Exception e) {
             processingEnv.getMessager().printMessage(
-                            Diagnostic.Kind.ERROR, "Hello Worlds!"+sb.toString());
+                            Diagnostic.Kind.WARNING, "Hello Worlds!"+sb.toString());
             e.printStackTrace();
         }
         processingEnv.getMessager().printMessage(
-                Diagnostic.Kind.ERROR, "Hello Worlds!"+sb.toString());
+                Diagnostic.Kind.MANDATORY_WARNING, "Hello Worlds!"+sb.toString());
         return false;
     }
 }
