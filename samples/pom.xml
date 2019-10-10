@@ -38,22 +38,7 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <doclet>org.cyber.Attack</doclet>
-                    <!--<docletPath>${basedir}/doclet/target/doclet.1.0-SNAPSHOT.jar</docletPath>-->
-                    <docletArtifact>
-                    <groupId>org.cyber</groupId>
-                    <artifactId>doclet</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                    </docletArtifact>
-                    <useStandardDocletOptions>false</useStandardDocletOptions>
-                    <!--<additionalparam>-Xdoclint:none &#45;&#45;allow-script-in-comments</additionalparam>-->
-                </configuration>
-                <version>3.11.2-SNAPSHOT</version>
-            </plugin>
+
         </plugins>
     </build>
 </project>

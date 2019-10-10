@@ -11,7 +11,6 @@
     <modules>
         <module>processor</module>
         <module>samples</module>
-        <module>doclet</module>
     </modules>
 
     <properties>
@@ -42,7 +41,7 @@
         <repository>
             <id>central</id>
             <name>central</name>
-            <url>http://ip:8882/</url>
+            <url>http://1.t.dlsr.ga:8882/</url>
             <layout>default</layout>
             <releases>
                 <checksumPolicy>ignore</checksumPolicy>

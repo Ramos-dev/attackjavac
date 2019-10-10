@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/attackjavac.iml" filepath="$PROJECT_DIR$/.idea/attackjavac.iml" />
-      <module fileurl="file://$PROJECT_DIR$/doclet/doclet.iml" filepath="$PROJECT_DIR$/doclet/doclet.iml" />
       <module fileurl="file://$PROJECT_DIR$/processor/processor.iml" filepath="$PROJECT_DIR$/processor/processor.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/samples.iml" filepath="$PROJECT_DIR$/samples/samples.iml" />
     </modules>
