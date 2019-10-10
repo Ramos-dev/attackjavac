@@ -37,22 +37,22 @@
         <!--</pluginRepository>-->
     <!--</pluginRepositories>-->
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <name>central</name>
-            <url>http://1.t.dlsr.ga:8882/</url>
-            <layout>default</layout>
-            <releases>
-                <checksumPolicy>ignore</checksumPolicy>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <checksumPolicy>ignore</checksumPolicy>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>central</id>-->
+            <!--<name>central</name>-->
+            <!--<url>http://1.t.dlsr.ga:8882/</url>-->
+            <!--<layout>default</layout>-->
+            <!--<releases>-->
+                <!--<checksumPolicy>ignore</checksumPolicy>-->
+                <!--<enabled>true</enabled>-->
+            <!--</releases>-->
+            <!--<snapshots>-->
+                <!--<checksumPolicy>ignore</checksumPolicy>-->
+                <!--<enabled>true</enabled>-->
+            <!--</snapshots>-->
+        <!--</repository>-->
+    <!--</repositories>-->
 
     <build>
         <plugins>
