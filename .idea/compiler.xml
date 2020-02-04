@@ -7,6 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="doclet" />
+      </profile>
+      <profile name="Annotation profile for attackjavac" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/processor/target/classes" />
+        </processorPath>
         <module name="samples" />
       </profile>
     </annotationProcessing>
